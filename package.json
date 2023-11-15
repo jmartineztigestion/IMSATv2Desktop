@@ -12,7 +12,8 @@
   "repository": "https://github.com/jmartineztigestion/IMSATv2Desktop",
   "publish": {
     "provider": "github",
-    "releaseType": "release"
+    "releaseType": "release",
+    "private": false
   },
   "build": {
     "appId": "com.imsat.tigestion",
