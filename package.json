@@ -1,7 +1,7 @@
 {
   "name": "imsat",
   "version": "2.1.0",
-  "description": "My test electron app",
+  "description": "IMSAT v2 - La tranquilidad de un apoyo tecnológico profesional",
   "main": "imsat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,20 +19,32 @@
     "appId": "com.imsat.tigestion",
     "productName": "IMSAT",
     "win": {
-      "target": "nsis"
+      "target": [
+        "nsis"
+      ],
+      "icon": "imsat.ico"
     },
     "directories": {
       "output": "dist"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "imsat.ico",
+      "uninstallerIcon": "imsat.ico",
+      "uninstallDisplayName": "uninstall",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": false
     }
   },
-  "author": "Jorge Martínez Jiménez",
+  "author": "Jorge Martínez Jiménez | TIGestión",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^19.0.9",
+    "electron": "^27.1.0",
     "electron-builder": "^23.6.0",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "custom-electron-titlebar": "^4.2.7",
     "electron-updater": "^5.3.0"
   }
 }
