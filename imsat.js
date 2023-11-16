@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, ipcRenderer } = require("electron");
+const { app, BrowserWindow, ipcMain, ipcRenderer  } = require("electron");
 const MainScreen = require("./imsat/main/mainImsat");
 const Globals = require("./globals");
 const { autoUpdater, AppUpdater } = require("electron-updater");

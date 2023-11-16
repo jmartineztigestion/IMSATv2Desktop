@@ -22,17 +22,20 @@ class MainScreen {
       titleBarStyle: 'hidden',
       maximizable: true,
       frame:false,
+      
       titleBarOverlay: {
-        color: 'white',
+        color: '#00FF0000',
         symbolColor: 'black',
         height: 10
       },
       acceptFirstMouse: true,
       autoHideMenuBar: true,
       show: false,
-      webPreferences: {      
+      webPreferences: {    
+        webviewTag: true,
+        nodeIntegration: true, 
+        nodeIntegrationInWorker: true,  
         webSecurity: false,
-        nodeIntegration: false,
         contextIsolation: true,
         preload: path.join(__dirname, "./mainPreload.js"),
       },
@@ -49,7 +52,8 @@ class MainScreen {
     this.handleMessages();
 
     let wc = this.window.webContents;
-    wc.openDevTools({ mode: "undocked" });
+    //wc.openDevTools({ mode: "undocked" });
+    //this.window.loadURL('https://imsat.info')
 
     this.window.loadFile("./imsat/main/main.html");
   }
