@@ -3,7 +3,6 @@ const path = require("path");
 
 class MainScreen {
   window;
-
   position = {
     width: 1300,
     height: 750,
@@ -22,7 +21,6 @@ class MainScreen {
       titleBarStyle: 'hidden',
       maximizable: true,
       frame:false,
-      
       titleBarOverlay: {
         color: '#00FF0000',
         symbolColor: 'black',
@@ -33,8 +31,6 @@ class MainScreen {
       show: false,
       webPreferences: {    
         webviewTag: true,
-        nodeIntegration: true, 
-        nodeIntegrationInWorker: true,  
         webSecurity: false,
         contextIsolation: true,
         preload: path.join(__dirname, "./mainPreload.js"),

@@ -1,6 +1,6 @@
 {
   "name": "imsat",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "IMSAT v2 - La tranquilidad de un apoyo tecnológico profesional",
   "main": "imsat.js",
   "scripts": {
@@ -12,18 +12,16 @@
   "repository": "https://github.com/jmartineztigestion/IMSATv2Desktop",
   "publish": {
     "provider": "github",
-    "releaseType": "release",
-    "private": false
+    "releaseType": "release"
   },
   "build": {
     "appId": "com.imsat.tigestion",
     "productName": "IMSAT",
     "win": {
-      "target": [
-        "nsis"
-      ],
+      "target": "nsis",    
       "icon": "imsat.ico"
     },
+    
     "directories": {
       "output": "dist"
     },
