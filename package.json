@@ -18,10 +18,9 @@
     "appId": "com.imsat.tigestion",
     "productName": "IMSAT",
     "win": {
-      "target": "nsis",    
+      "target": "nsis",
       "icon": "imsat.ico"
     },
-    
     "directories": {
       "output": "dist"
     },
@@ -44,6 +43,7 @@
   },
   "dependencies": {
     "custom-electron-titlebar": "^4.2.7",
-    "electron-updater": "^5.3.0"
+    "electron-updater": "^5.3.0",
+    "update-electron-app": "^3.0.0"
   }
 }
