@@ -5,7 +5,7 @@ class MainScreen {
   window;
   position = {
     width: 1300,
-    height: 750,
+    height: 760,
     minWidth: 550,
     minHeight: 400
   };
