@@ -28,12 +28,12 @@
       "oneClick": true,
       "installerIcon": "imsat.ico",
       "uninstallerIcon": "imsat.ico",
-      "uninstallDisplayName": "uninstall",
+      "uninstallDisplayName": "imsat",
       "license": "license.md",
       "allowToChangeInstallationDirectory": false
     }
   },
-  "author": "Jorge Martínez Jiménez | TIGestión",
+  "author": "JMJ | TIGestión",
   "license": "ISC",
   "devDependencies": {
     "electron": "^27.1.0",
